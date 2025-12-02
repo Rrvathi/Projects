@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Application</title>
+    <style>
+        body{
+            background-color: rgb(218, 135, 218);
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 100vh;
+            display: flex;
+            flex-direction:column;
+        }
+        button{
+            padding:8px 30px;
+            flex-direction: row;
+            cursor: pointer;
+            color:black;
+            border:1px solid grey;
+        }
+        #one{
+            background-color: rgb(18, 200, 18);
+            color:white;
+            font-size: 18px;
+            border:none;
+            border-radius: 5px;
+            border:2px solid grey;
+        }
+        #two{
+            background-color:rgb(175, 167, 167);
+            color:white;
+            font-size: 18px;
+            border:none;
+            border-radius: 5px;
+            border:2px solid grey;
+        }
+        #three{
+            background-color: rgb(16, 167, 243);
+            color:white;
+            font-size: 18px;
+            border:none;
+            border-radius: 5px;
+            border:2px solid grey
+        }
+        h1{
+            color:white;
+        }
+        p{
+            font-size:25px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Counter App</h1>
+    <p id="count">0</p>
+    <div>
+    <button id="one" onclick="Ondecrement()">-</button>
+    <button id="two" onclick="Onreset()">Reset</button>
+    <button id="three" onclick="Onincrement()">+</button>
+    </div>
+    <script>
+        let count_ele= document.getElementById("count")
+        function Onincrement(){
+         current_count=parseInt(count_ele.innerHTML)+1
+          if(current_count>0)
+            count_ele.style.color="blue"
+         count_ele.innerHTML= current_count
+        }
+
+        function Onreset(){
+            count_ele.innerHTML=0
+            count_ele.style.color="black"
+        }
+
+        function Ondecrement(){
+            current_count=parseInt(count_ele.innerHTML)-1
+            if(current_count<0)
+            count_ele.style.color="red"
+         count_ele.innerHTML= current_count
+        }
+
+
+    </script>
+</body>
+</html>
