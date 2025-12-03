@@ -28,6 +28,11 @@
             flex-wrap: wrap;
             overflow: scroll;
          }
+         .card{
+            width:100px;
+          height:100px;
+          margin:1px;
+         }
         </style>
 </head>
 <body>
@@ -48,16 +53,15 @@
         function  addtocard(color){
             console.log(color)
           let curr_ele=document.createElement("div")
+          curr_ele.classList.add("card")
           let del_btn=document.createElement("button")
           del_btn.textContent="❌"
           del_btn.onclick=function(){
-          console.log(curr_ele)
+            console.log(curr_ele)
+          
           parent.removeChild(curr_ele)
           }
           curr_ele.style.border=`1px solid ${color}`
-          curr_ele.style.width="100px"
-          curr_ele.style.height="100px"
-          curr_ele.style.margin="1px"
           curr_ele.style.backgroundColor=color
           curr_ele.appendChild(del_btn)
 

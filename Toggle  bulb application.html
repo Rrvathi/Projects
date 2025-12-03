@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Application</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            background-color:rgb(48, 48, 233);
+        }
+        img{
+            width:200px;
+            height:200px;
+            margin:20px;
+        }
+        button{
+            padding:8px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor:pointer;
+            border:2px solid grey;
+        }
+        h1{
+            color:yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bulb Activity</h1>
+    <img src="https://studio.hammerton.com/wp-content/uploads/sites/3/2021/01/bulb2.png">
+    <div>
+    <button onclick="switchon()">Switch On</button>
+    <button onclick="switchoff()">Switch Off</button>
+    <script>
+        let image_ele=document.getElementsByTagName("img")
+        function switchon(){
+         
+         image_ele[0].src="https://static.vecteezy.com/system/resources/previews/018/246/162/original/3d-light-bulb-free-png.png"
+         document.body.style.backgroundColor="black"
+
+        }
+        function switchoff(){
+            image_ele[0].src="https://www.pngmart.com/files/6/Light-Bulb-PNG-Clipart.png"
+            document.body.style.backgroundColor="black"
+        }
+    </script>
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Activity using toggle condition</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+        }
+        button{
+            padding:5px 25px;
+            font-size:18px;
+            border:2px solid grey;
+            border-radius: 4px;
+            cursor:pointer;
+            background-color: transparent;
+            color:white;
+        }
+        img{
+            width:200px;
+            height:200px;
+        }
+        h1{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">Bulb Activity</h1>
+    <img src="https://png.pngtree.com/png-clipart/20240328/original/pngtree-light-bulb-turn-off-to-save-electrical-png-image_14702782.png">
+    <button onclick="switch_()">swtich</button>
+
+    <script>
+        let swicth="off"
+        let image_ele=document.getElementsByTagName("img")
+        let head_ele=document.getElementsByTagName("h1")
+        function switch_(){
+            if(swicth=="off"){
+                swicth="On"
+                head_ele[0].classList.add("heading")
+                image_ele[0].src="https://static.vecteezy.com/system/resources/previews/018/246/162/original/3d-light-bulb-free-png.png"
+                document.body.style.backgroundColor="black"
+
+            }else{
+                swicth="off"
+                head_ele[0].classList.remove("heading")
+                image_ele[0].src="https://www.pngmart.com/files/6/Light-Bulb-PNG-Clipart.png"
+            }
+         }
+    </script>
+</body>
+</html> -->
