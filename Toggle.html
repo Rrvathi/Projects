@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            padding:8px 10px;
+            font-size:16px;
+            border:2px solid grey;
+            border-radius:5px;
+            cursor: pointer;
+        }
+        h1{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To Toggle bage</h1>
+    <button id="tooglebtn" onclick="btn()">Switch to Toggle mode</button>
+    <script>
+        function btn(){
+            let btn=document.getElementById('togglebtn')
+            document.body.classList.toggle('darkmode')
+            document.body.classList.toggle('whitemode')
+            document.body.style.backgroundColor="black"
+            document.body.style.backgroundColor="white"
+        }
+         if (document.body.classList.contains('dark-mode')) {
+        btn.textContent = 'Switch to Light Mode';
+      } else {
+        btn.textContent = 'Switch to Dark Mode';
+      }
+    
+    </script>
+</body>
+</html>
