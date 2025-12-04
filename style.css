@@ -8,7 +8,7 @@
 body{
     height: 100vh;
     background: linear-gradient(
-        135deg,#8052ec,#d161ff);
+        135deg, rgba(0, 221, 255, 0.879),#c974eb);
     
 }
 .container{
@@ -31,7 +31,7 @@ body{
 #newtask input{
     width:70%;
     width:70%;
-    height: 45px;
+    height: 35px;
     font-family: "poppins",sans-serif;
     font-size: 15px;
     border: 2px solid white;
@@ -39,7 +39,7 @@ body{
     color:black;
     font-weight: 500;
     position: relative;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 #newtask input:focus{
     outline: none;
@@ -53,7 +53,7 @@ body{
     height: 45px;
     width: 100px;
     border: none;
-    background-color: #8052ec;
+    background-color: rgb(11, 203, 11);
     color: white;
     font-size: 16px;
     font-family: 'poppins',sans-serif;
