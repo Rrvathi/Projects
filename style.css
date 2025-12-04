@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,#8052ec,#d161ff);
+    
+}
+.container{
+    border: 2px solid white;
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+}
+#newtask{
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+#newtask input{
+    width:70%;
+    width:70%;
+    height: 45px;
+    font-family: "poppins",sans-serif;
+    font-size: 15px;
+    border: 2px solid white;
+    padding: 12px;
+    color:black;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+#newtask input:focus{
+    outline: none;
+    border: 2px solid #8052ec;
+}
+#newtask button{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 45px;
+    width: 100px;
+    border: none;
+    background-color: #8052ec;
+    color: white;
+    font-size: 16px;
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#tasks{
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    font-family: 'poppins',sans-serif;
+    font-size: 15px;
+    position: relative;
+    
+
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.task span{
+    flex-grow: 1;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    font-family: 'poppins',sans-serif;
+}
+.task button{
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 14px;
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+.task button:hover{
+    background-color: #e60000;
+}
+.completed{
+    text-decoration: line-through;
+    color: grey;
+}
