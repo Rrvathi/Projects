@@ -3,88 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter Application</title>
+    <title>Document</title>
     <style>
         body{
-            background-color: rgb(218, 135, 218);
-            align-items: center;
+            font-size:16px;
+            display:flex;
+            flex-direction: column;
             text-align: center;
+            height:100vh;
             justify-content: center;
-            height: 100vh;
-            display: flex;
-            flex-direction:column;
-        }
-        button{
-            padding:15px 35px;
-            flex-direction: row;
-            cursor: pointer;
-            color:black;
-            border:1px solid grey;
-        }
-        #one{
-            background-color: rgb(18, 200, 18);
-            color:white;
-            font-size: 18px;
-            border:none;
-            border-radius: 5px;
-            border:2px solid grey;
-        }
-        #two{
-            background-color:rgb(175, 167, 167);
-            color:white;
-            font-size: 18px;
-            border:none;
-            border-radius: 5px;
-            border:2px solid grey;
-        }
-        #three{
-            background-color: rgb(16, 167, 243);
-            color:white;
-            font-size: 18px;
-            border:none;
-            border-radius: 5px;
-            border:2px solid grey
-        }
-        h1{
-            color:black;
-            font-size: 35px;
+            align-items: center;
+            background-color:rgb(135, 207, 235);
         }
         p{
-            font-size:45px;
+            font-size:40px;
+        }
+        button{
+            padding:10px 40px;
+            border:2px solid grey;
+            font-size:20px;
+            cursor:pointer;
+        }
+        #one{
+            background-color: red;
+        }
+        #Three{
+            background-color: rgb(14, 206, 14);
+        }
+        h1{
+            color:blue;
         }
     </style>
-
 </head>
 <body>
     <h1>Counter App</h1>
     <p id="count">0</p>
     <div>
-    <button id="one" onclick="Ondecrement()">-</button>
-    <button id="two" onclick="Onreset()">Reset</button>
-    <button id="three" onclick="Onincrement()">+</button>
+    <button id="one" onclick="OnDecrement()">-</button>
+    <button id="Two" onclick="OnReset()">Reset</button>
+    <button id="Three" onclick="OnIncrement()">+</button>
     </div>
     <script>
         let count_ele= document.getElementById("count")
-        function Onincrement(){
-         current_count=parseInt(count_ele.innerHTML)+1
-          if(current_count>0)
-            count_ele.style.color="blue"
-         count_ele.innerHTML= current_count
+        function OnIncrement(){
+            current_count=parseInt(count_ele.innerHTML)+1
+            if(current_count>0)
+            count_ele.style.color="green"
+            count_ele.innerHTML=current_count
         }
-
-        function Onreset(){
+        function OnReset(){
             count_ele.innerHTML=0
-            if(current_count==0)
             count_ele.style.color="black"
         }
-
-        function Ondecrement(){
+        function OnDecrement(){
             current_count=parseInt(count_ele.innerHTML)-1
             if(current_count<0)
             count_ele.style.color="red"
-         count_ele.innerHTML= current_count
+            count_ele.innerHTML=current_count
         }
-
 
     </script>
 </body>
