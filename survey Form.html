@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            padding:6px 45px;
+        }
+        input::placeholder{
+            text-align: start;
+        }
+        select{
+            width: 100px;
+        }
+        button{
+            width:300px;
+            height:30px;
+            background-color: rgb(7, 192, 7);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+        <label>Email</label><br>
+        <input type="text" placeholder="enter your email"><br><br>
+        <label>Age</label><br>
+        <input type="text" placeholder="Enter your age"><br><br>
+        <label>Which option best discribe you?</label><br>
+        <select>
+            <option value="student">student</option>
+            <option value="Frehser">Fresher</option>
+            <option value="Employee">Employee</option>
+            <option value="Expreienced">Experienced</option>
+        </select><br><br>
+        <label>Would you recommneded grrek for greek to a friend?</label><br>
+        <input type="radio" name="yes" value="yes">yes<br>
+        <input type="radio" name="no" value="no">No<br>
+        <input type="radio" name="May be" value="may be">may be<br><br>
+        <label>Language and frnameworks known</label><br>
+        <input type="checkbox">C<br>
+        <input type="checkbox">c++<br>
+        <input type="checkbox">C hash<br>
+        <input type="checkbox">java<br>
+        <input type="checkbox">python<br>
+        <input type="checkbox">javascript<br>
+        <input type="checkbox">React<br>
+        <input type="checkbox">Angular<br>
+        <input type="checkbox">Django<br>
+        <input type="checkbox">switch<br><br>
+        <label>Any comments or suggetsions</label><br>
+        <input type="text" placeholder="enter your commnet here"><br><br>
+        <button>submit</button>
+    </form>
+</body>
+</html>
